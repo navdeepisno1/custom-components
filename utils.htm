@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+         :root {
+            --color-accent: #FF4081;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .custom-snackbar-container {
+            margin: 16px;
+            background: #252525;
+            padding: 12px 16px;
+            border-radius: 6px;
+            color: #fff;
+            box-shadow: 0 2px 4px grey;
+        }
+        
+        .custom-chips-container {
+            list-style: none;
+            margin: 16px;
+            padding: 0;
+        }
+        
+        .custom-chips-container>li {
+            background-color: var(--color-accent);
+            color: #fff;
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 100px;
+            margin-top: 6px;
+            transition: all 0.2s;
+        }
+        
+        .custom-card-container {
+            width: 300px;
+        }
+        
+        .custom-card-container>.custom-card {
+            width: 100%;
+            border-radius: 24px;
+            margin: 16px;
+            padding: 16px;
+            background-color: white;
+            box-shadow: 0 4px 8px #b7b7b7;
+        }
+        
+        .custom-card>.custom-card-body {
+            width: 100%;
+        }
+        
+        .custom-card-body>img {
+            width: 100%;
+            border-radius: 12px;
+        }
+        
+        .custom-btn-primary {
+            width: 100%;
+            background: var(--color-accent);
+            outline: none;
+            border: none;
+        }
+        
+        .custom-btn-outline {
+            width: 100%;
+            outline: none;
+            border: thin solid var(--color-accent);
+            color: var(--color-accent);
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="custom-snackbar-wrapper">
+        <div class="custom-snackbar-container">
+            <div class="row">
+                <div class="col">
+                    This is a message !!
+                </div>
+                <div class="col-auto">
+                    <b>DISMISS</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-chips-wrapper">
+        <ul class="custom-chips-container">
+            <li>Chip 1</li>
+            <li>Chip 2</li>
+            <li>Chip 3</li>
+            <li>Chip 4</li>
+        </ul>
+    </div>
+
+    <div class="custom-card-wrapper">
+        <div class="custom-card-container">
+            <div class="custom-card">
+                <div class="custom-card-body">
+                    <img src="https://thumbs.dreamstime.com/b/landscape-nature-mountan-alps-rainbow-76824355.jpg">
+                    <div class="row p-1">
+                        <div class="col">
+                            <div class="row mt-2">
+                                <div class="col" style="color: var(--color-accent);">
+                                    <h4><b>Heading</b></h4>
+                                </div>
+                            </div>
+
+                            <div class="row mt-1">
+                                <div class="col">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="btn btn-primary custom-btn-primary">Major</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-primary custom-btn-outline">Major</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
